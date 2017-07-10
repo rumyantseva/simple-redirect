@@ -21,7 +21,7 @@ func main() {
 	}
 
 	// Check of type is 301 or 302
-	if redirectCode != http.StatusPermanentRedirect &&
+	if redirectCode != http.StatusMovedPermanently &&
 		redirectCode != http.StatusFound &&
 		redirectCode != http.StatusSeeOther {
 		err := fmt.Errorf("Forwarding type %s is incorrect", redirectType)

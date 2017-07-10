@@ -1,6 +1,6 @@
 {
   "name": "Simple Redirect",
-  "description": "Written in Go",
+  "description": "This app allows to set redirect rule for the website",
   "keywords": [
     "redirect",
     "forwarding",

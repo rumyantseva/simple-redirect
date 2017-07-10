@@ -9,7 +9,7 @@
   "image": "heroku/go:1.8",
   "mount_dir": "src/github.com/rumyantseva/simple-redirect",
   "website": "https://github.com/rumyantseva/simple-redirect",
-  "repository": "htts://github.com/rumyantseva/simple-redirect",
+  "repository": "https://github.com/rumyantseva/simple-redirect",
   "env": {
     "TO": {
       "description": "Where to redirect (e.g. https://google.com)",

@@ -20,7 +20,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	// Check of type is 301 or 302
+	// Check of type is 301 or 302 or 303
 	if redirectCode != http.StatusPermanentRedirect &&
 		redirectCode != http.StatusFound &&
 		redirectCode != http.StatusSeeOther {

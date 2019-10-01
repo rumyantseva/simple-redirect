@@ -6,16 +6,26 @@ import (
 	"net/http"
 	"os"
 	"strconv"
+	"strings"
 )
 
 func main() {
+
 	port := os.Getenv("PORT") // 80
+	if strings.TrimSpace(port) == "" {
+		log.Println("PORT environment variable has not been set")
+		port = "80"
+	}
 
 	redirectTo := os.Getenv("TO")     // https://google.com
+	if strings.TrimSpace(redirectTo) == "" {
+		log.Println("TO environment variable has not been set")
+		redirectTo = "https://google.com"
+	}
+
 	redirectType := os.Getenv("TYPE") // 301
 
 	redirectCode, err := strconv.Atoi(redirectType)
-
 	if err != nil {
 		log.Fatal(err)
 	}

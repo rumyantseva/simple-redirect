@@ -23,7 +23,7 @@
   "environments": {
     "test": {
       "scripts": {
-        "test": "go test ."
+        "test": "go test ./..."
       }
     }
   }

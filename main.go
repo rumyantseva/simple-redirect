@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+	log.Print("Starting the app...")
 
 	port := os.Getenv("PORT") // 80
 	if strings.TrimSpace(port) == "" {

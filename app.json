@@ -6,7 +6,7 @@
     "forwarding",
     "go"
   ],
-  "image": "heroku/go:1.8",
+  "image": "heroku/go:1.17",
   "mount_dir": "src/github.com/rumyantseva/simple-redirect",
   "website": "https://github.com/rumyantseva/simple-redirect",
   "repository": "https://github.com/rumyantseva/simple-redirect",

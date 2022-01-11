@@ -19,5 +19,12 @@
       "description": "Type of redirect (e.g. 301)",
       "required": true
     }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test": "go test ./..."
+      }
+    }
   }
 }
